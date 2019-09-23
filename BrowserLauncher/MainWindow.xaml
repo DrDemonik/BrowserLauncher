@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BrowserLauncher"
+        xmlns:cefsharpwpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="BrowserLauncher">
     <Grid>
-        
+        <Button Content="Пуск" Height="32" Margin="10,29,0,0" VerticalAlignment="Top" Click="Button_Click" HorizontalAlignment="Left" Width="130"/>
+        <TextBox Name="MyTextBox" Height="19" Margin="10,10,10,0" TextWrapping="Wrap" Text="habr.com" VerticalAlignment="Top" Background="#FFECD4D4"/>
+        <cefsharpwpf:ChromiumWebBrowser x:Name="MyChromiumWebBrowser" Margin="10,66,10,10"/>
+
     </Grid>
 </Window>

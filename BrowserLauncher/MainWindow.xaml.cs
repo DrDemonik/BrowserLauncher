@@ -24,5 +24,10 @@ namespace BrowserLauncher
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.MyChromiumWebBrowser.Address=this.MyTextBox.Text;
+        }
     }
 }
